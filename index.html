@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Video Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Video Portfolio</h1>
+        <p>A showcase of my work from YouTube</p>
+        <div class="filters">
+            <button data-category="all" class="active">All</button>
+            <button data-category="music">Music Videos</button>
+            <button data-category="events">Event Coverage</button>
+        </div>
+    </header>
+    <main>
+        <div id="video-gallery" class="video-gallery">
+            <!-- Videos will be dynamically loaded here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Video Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <iframe id="lightbox-video" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
