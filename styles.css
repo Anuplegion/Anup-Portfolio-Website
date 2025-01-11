@@ -13,6 +13,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 1em 0;
+    position: relative;
 }
 
 header h1 {
@@ -46,6 +47,7 @@ header p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
     padding: 1em;
+    background-color: #282828;  /* Darker background for 3D effect */
 }
 
 .video-item {
@@ -54,11 +56,14 @@ header p {
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .video-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);  /* Increase the scale for a more pronounced effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);  /* Increase the shadow for a deeper 3D effect */
+    background-color: rgba(192, 192, 192, 0.35);  /* Change background to 35% grey on hover */
 }
 
 .video-item iframe {
@@ -71,7 +76,7 @@ header p {
     font-size: 1.2em;
 }
 
-.video-item p {
+video-item p {
     margin: 0 0 1em;
     color: #555;
 }
@@ -118,7 +123,7 @@ footer {
     position: absolute;
     top: 10px;
     right: 20px;
-    color: #969696;
+    color: #fff;
     font-size: 2em;
     cursor: pointer;
 }

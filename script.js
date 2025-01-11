@@ -178,3 +178,25 @@ document.addEventListener('keydown', (e) => {
 
 // Initial Load
 loadVideos();
+
+// Apply random gradient to the header text
+function randomGradient() {
+    const gradients = [
+        'linear-gradient(to right, #ff5f6d, #ffc371)',  // Pink to yellow
+        'linear-gradient(to right, #ff9966, #ff5e62)',  // Orange to red
+        'linear-gradient(to right, #00c6ff, #0072ff)',  // Light blue to blue
+        'linear-gradient(to right, #7f00ff, #e100ff)',  // Purple to magenta
+        'linear-gradient(to right, #f7971e, #ffd200)',  // Orange to yellow
+        'linear-gradient(to right, #00f260, #0575e6)',  // Green to blue
+        'linear-gradient(to right, #f857a6, #ff5858)'   // Pink to red
+    ];
+    const gradient = gradients[Math.floor(Math.random() * gradients.length)];
+    const rainbowText = document.getElementById('rainbow-text');
+    rainbowText.style.background = gradient;
+    rainbowText.style.webkitBackgroundClip = 'text';
+    rainbowText.style.webkitTextFillColor = 'transparent';
+}
+
+randomGradient();
+
+
