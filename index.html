@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Video Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>My Video Portfolio</h1>
-        <p>A showcase of my work from YouTube</p>
+        <h1>Anup Adhikari Creative Portfolio</h1>
+        <p>A showcase of my video work over the years</p>
         <div class="filters">
             <button data-category="all" class="active">All</button>
             <button data-category="music">Music Videos</button>
             <button data-category="events">Event Coverage</button>
+            <button data-category="podcast">Podcast</button>
+            
         </div>
     </header>
     <main>
@@ -22,13 +25,14 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2025 My Video Portfolio. All rights reserved.</p>
+        <p>&copy; Anup Adhikari 2025 Video Portfolio. All rights reserved.</p>
     </footer>
 
     <!-- Lightbox Modal -->
     <div id="lightbox" class="lightbox">
         <div class="lightbox-content">
             <span class="close">&times;</span>
+            <h3 id="lightbox-title"></h3>
             <iframe id="lightbox-video" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
